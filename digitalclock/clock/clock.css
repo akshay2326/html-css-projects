@@ -1,0 +1,37 @@
+#clockcontainer {
+    margin: auto;
+    height: 60vh;
+    width: 60vh;
+  
+    background: url(clock.png) no-repeat center;
+    background-size: 100%;
+    position: relative; /* Needed for absolute positioning of hands */
+}
+
+#min, #hour, #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    left: 50%; 
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1%;  
+    height: 15%;
+    top: 35%;
+}
+
+#min {
+    width: 0.7%;
+    height: 20%;
+    top: 30%;
+}
+
+#second {
+    width: 0.5%;
+    height: 25%;
+    top: 25%;
+    background: red; 
+}
