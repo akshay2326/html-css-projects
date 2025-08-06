@@ -1,0 +1,34 @@
+.banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.banner,.product{
+    /* background-color: brown; */
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    z-index:1;
+    transition:0.7s;
+}
+
+.banner, .product, .soda {
+    background: 
+        url(./image\ copy.png) var(--left) 0 ,
+        url(./aksahy\ part2.png) no-repeat center;
+    background-size: auto 100%, auto 100%;
+    width: 80px;
+    height: 169px;
+    aspect-ratio: 2 / 4;
+    background-blend-mode: multiply;
+    mask-size: auto;
+}
+.banner,.product:hover{
+    --left: -1000px;
+transform:translateX(-50%) translateY(120px)}
+.rock{
+    background-size: cover;
+}
