@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Violation Reporting System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            margin: 0 0.5rem;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 2rem;
+        }
+        .rules {
+            background-color: #e8e8e8;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Traffic Violation Reporting System</h1>
+    <p>Report traffic violations and earn rewards for your contribution to road safety!</p>
+</header>
+
+<nav>
+    <a href="#report">Report Violation</a>
+    <a href="#rules">Traffic Rules</a>
+    <a href="#rewards">Rewards</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="report">
+    <h2>Report Traffic Violation</h2>
+    <p>Help us enforce traffic rules by submitting evidence of violations. You can upload a video or describe the incident below.</p>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="description">Violation Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="video">Upload Video:</label>
+        <input type="file" id="video" name="video" accept="video/*" required><br><br>
+
+        <label for="location">Location of Violation:</label>
+        <input type="text" id="location" name="location" placeholder="City, Street Name" required><br><br>
+
+        <button type="submit">Submit Violation</button>
+    </form>
+</section>
+
+<section id="rules">
+    <h2>Traffic Rules</h2>
+    <p>The following traffic violations are eligible for the 10% reward scheme:</p>
+    <div class="rules">
+        <ul>
+            <li>Jumping a red light.</li>
+            <li>Over-speeding or reckless driving.</li>
+            <li>Driving without a helmet (for two-wheelers).</li>
+            <li>Using a mobile phone while driving.</li>
+            <li>Driving in a no-entry zone.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="rewards">
+    <h2>Reward Scheme</h2>
+    <p>When you report a valid traffic violation with video evidence, you are eligible for a reward:</p>
+    <ul>
+        <li>10% of the fine amount is credited to your account after the fine is collected from the violator.</li>
+        <li>Rewards can be redeemed via online transfer or vouchers.</li>
+        <li>Keep track of your submissions and rewards through your account.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have questions or need assistance, feel free to reach out:</p>
+    <p>Email: support@trafficviolation.com</p>
+    <p>Helpline: +1-234-567-890</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Traffic Violation Reporting System. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
