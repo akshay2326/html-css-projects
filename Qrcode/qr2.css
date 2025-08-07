@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure padding doesn't affect dimensions */
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: aliceblue;
+    width: 300px;
+    height: auto; /* Allow dynamic height */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Ensures proper layout */
+    align-items: center;
+    padding: 25px 35px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.container input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(45, 45, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(149, 149, 228);
+}
+
+#imgbox {
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#imgbox img {
+    width: 100%;
+    padding: 10px;
+}
+
+#imgbox.show-img {
+    max-height: 250px; /* Adjusted height */
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+    border: 2px solid red; /* Visual feedback for errors */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
