@@ -1,0 +1,25 @@
+
+.option{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: cursive;
+}
+body{
+    background-color: antiquewhite;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+button{
+    margin-top: 40px;
+    width: 200px;
+background-color: blue;
+height: 40px;
+font-size: 20px;
+color: aliceblue;
+border-radius: 5%;cursor: pointer;;}
+button:hover{
+    background-color: rgb(4, 4, 65);
+}
